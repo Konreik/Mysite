@@ -52,28 +52,23 @@ border-radius: 25px;
   button { text-align:center; }
 
   
-  @media only screen and (max-width: 600px) {
-    /* Adjust styles for screens with a width of 600 pixels or less */
-    .real2,
-    .real7,
-    .xy {
-      font-size: 12px;
-      margin-left: 5px;
-    }
+  body {
+  margin: 0;
+  padding: 0;
+}
 
-    .real7 {
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+.container {
+  width: 100%;
+  max-width: 600px; /* Adjust the maximum width for phone screens */
+  margin: 0 auto; /* Center the container */
+}
 
-    .xy {
-      width: 80px;
-      height: 40px;
-      font-size: 15px;
-    }
+/* Styles for screens up to 600px wide (phones) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px; /* Adjust spacing for smaller screens */
   }
+}
   
 
  
