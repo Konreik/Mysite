@@ -1,0 +1,106 @@
+<style>
+  .real1{ text-align: center; }
+  .real2{
+    color: blue;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    border-color: blue;
+    transition:0.5s;
+border-radius: 25px;
+    
+  }
+  .real2:hover { background-color:blue;
+    color: white ;
+  }
+  .real7:hover { opacity:0.4;}
+   .xy:hover { opacity:0.5; }
+  .real7 { 
+  background-color: red;
+  color: white ;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none ;
+  transition: 1s;
+  margin-left: 10px;
+  }
+  
+  .xy { 
+  background-color: black;
+  color: white ;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none ;
+  transition: 1s;
+  margin-left: 12px;
+  
+  }
+  
+  
+  .r91 { text-align: center; }
+  
+  p { text-align: center; }
+  
+  .link1 { text-align: center; }
+  
+  .di-5 { }
+  
+
+ 
+ 
+</style>
+
+<h1 class="real1">Reikons Site</h1>
+<p class="r91"> social links </p>
+<a href="https://www.instagram.com/reikonforreal?igsh=MWl4ZjUzemJlN21raw==">
+ <button class="real2"> Instagram </button>
+ </a>
+<a href="https://youtube.com/@reikonsline?si=UVa5pR_-wqaOnm13">
+ <button class="real7"> YouTube </button>
+ </a>
+ <a href="https://x.com/Reikon45?s=09">
+ <button class='xy'> X </button>
+ </a>
+<br>
+<br>
+<p>surviving till</p>
+
+
+<div style="text-align: center; font-size: 24px;">
+  <div id="countdown"></div>
+</div>
+<script>
+  // Set the date we're counting down to
+  const countDownDate = new Date("July 15, 2030 00:00:00").getTime();
+
+  // Update the countdown every 1 second
+  const x = setInterval(function() {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the remaining time
+    const distance = countDownDate - now;
+
+    // Calculate years, days, hours, minutes, and seconds
+    const years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+    const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    document.getElementById("countdown").innerHTML = `${years}y ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // If the countdown is over, display a message
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
